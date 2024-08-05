@@ -4,13 +4,16 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Title from "./ui/Title";
 
 export function FaqAccordion() {
   return (
-    <section className="mt-10 px-5 lg:px-40">
-      <h2 className="text-4xl font-bold text-black-100 text-center mb-10">
-        Vos questions les plus fréquentes
-      </h2>
+    <section className="mt-10 px-5 lg:px-40 mb-32">
+      <Title
+        level="h2"
+        label="Vos questions les plus fréquentes"
+        className="mb-16"
+      />
       <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="item-1">
           <AccordionTrigger>Is it accessible?</AccordionTrigger>
