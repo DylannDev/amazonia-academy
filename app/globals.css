@@ -8,13 +8,13 @@ h3,
 h4,
 h5,
 h6 {
-  @apply tracking-tighter;
+  @apply tracking-[-0.044em];
 }
 
 p,
 div,
 span {
-  @apply tracking-tight;
+  @apply tracking-[-0.020em];
 }
 
 @layer base {
