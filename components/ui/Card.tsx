@@ -4,7 +4,7 @@ type CardProps = {
 
 const Card = ({ children }: CardProps) => {
   return (
-    <div className="bg-white flex flex-col justify-center items-center rounded-3xl gap-6 px-5 py-10 shadow-2xl shadow-blue-700/10">
+    <div className="w-full bg-transparent flex flex-col justify-center items-center rounded-3xl gap-6 p-8 border">
       {children}
     </div>
   );

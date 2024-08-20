@@ -26,7 +26,7 @@ const Title = ({ level, label, className }: TitleProps) => {
           className ? className : "mb-8"
         } `;
       case "h4":
-        return `text-lg font-medium text-slate-500 text-center ${
+        return `text-lg font-light text-[#737a7c] text-center ${
           className ? className : "mb-6"
         } `;
       case "h5":
