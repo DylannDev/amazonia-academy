@@ -4,14 +4,25 @@ type ButtonProps = {
   position?: "left" | "right";
   handleClick?: () => void;
   otherClasses?: string;
+  size?: "large";
 };
 
-const Button = ({ label, icon, position, handleClick }: ButtonProps) => {
+const Button = ({
+  label,
+  icon,
+  position,
+  handleClick,
+  size,
+  otherClasses,
+}: ButtonProps) => {
+  const buttonClasses = `
+    flex justify-center  items-center gap-2 px-5 py-3 text-sm rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200
+    ${size === "large" && "w-full"} 
+    ${otherClasses || ""}
+  `;
+
   return (
-    <button
-      className="flex items-center gap-2 px-5 py-3 text-sm rounded-full w-fit bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200"
-      onClick={handleClick}
-    >
+    <button className={buttonClasses} onClick={handleClick}>
       {position === "left" && icon}
       {label}
       {position === "right" && icon}
