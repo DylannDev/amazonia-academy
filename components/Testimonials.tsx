@@ -66,8 +66,8 @@ export function Testimonials() {
             <ReviewCard key={review.username} {...review} />
           ))}
         </Marquee>
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-[#f5f5f5] dark:from-background"></div>
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[#f5f5f5] dark:from-background"></div>
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-[#fff] dark:from-background"></div>
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[#fff] dark:from-background"></div>
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 import { RiCheckFill } from "react-icons/ri";
 import Card from "./ui/Card";
+import { PiSealCheckFill } from "react-icons/pi";
 
 type BenefitCardProps = {
   benefit: {
@@ -16,10 +17,10 @@ const BenefitsCard = ({ benefit }: BenefitCardProps) => {
         {benefit.icon}
       </div>
       <span className="font-semibold">{benefit.title}</span>
-      <ul className="flex flex-col text-sm text-gray font-light gap-3 tracking-tight">
+      <ul className="flex flex-col items-start w-full text-sm font-light gap-3 tracking-tight">
         {benefit.list.map((itemList, index) => (
-          <li className="flex items-center gap-1">
-            <RiCheckFill className="text-green-500 animate-pulse text-base" />
+          <li key={benefit.title} className="flex gap-1">
+            <PiSealCheckFill className="text-green-500 text-xl" />
             <span>{itemList}</span>
           </li>
         ))}

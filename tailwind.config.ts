@@ -87,12 +87,22 @@ const config = {
           from: { transform: "translateY(0)" },
           to: { transform: "translateY(calc(-100% - var(--gap)))" },
         },
+        "slide-up": {
+          "0%": { transform: "translateY(10px)" },
+          "100%": { transform: "translateY(0)" },
+        },
+        "slide-down": {
+          "0%": { transform: "translateY(-10px)" },
+          "100%": { transform: "translateY(0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         marquee: "marquee var(--duration) linear infinite",
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
+        "slide-up": "slide-up 0.3s ease-in-out",
+        "slide-down": "slide-down 0.3s ease-in-out",
       },
     },
   },
