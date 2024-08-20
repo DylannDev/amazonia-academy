@@ -11,9 +11,11 @@
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.0",
+    "@radix-ui/react-tabs": "^1.1.0",
     "@types/dompurify": "^3.0.5",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "eslint": "^9.8.0",
     "framer-motion": "^11.3.19",
     "isomorphic-dompurify": "^2.14.0",
     "lucide-react": "^0.417.0",
