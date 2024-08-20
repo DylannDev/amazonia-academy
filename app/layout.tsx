@@ -19,8 +19,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={(inter.className, clsx("bg-[#f5f5f5] "))}>
-        <div className="max-w-6xl mx-auto px-5 lg:px-10">
+      <body className={inter.className}>
+        <div className="max-w-[110rem] mx-auto px-5">
           <Navbar />
           {children}
         </div>
