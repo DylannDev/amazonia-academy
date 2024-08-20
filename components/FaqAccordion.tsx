@@ -8,7 +8,7 @@ import Title from "./ui/Title";
 
 export function FaqAccordion() {
   return (
-    <section className="mt-10 px-5 lg:px-40 mb-32">
+    <section className="mt-10 px-5 lg:px-40 mb-32 max-w-[1200px] mx-auto w-full">
       <Title
         level="h2"
         label="Vos questions les plus fréquentes"
