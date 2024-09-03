@@ -14,32 +14,32 @@ const Title = ({ level, label, className }: TitleProps) => {
   const getClassName = (level: "h1" | "h2" | "h3" | "h4" | "h5" | "h6") => {
     switch (level) {
       case "h1":
-        return `text-5xl font-bold text-black-100 text-center ${
-          className ? className : "mb-8"
+        return `text-5xl font-bold ${
+          className ? className : "text-black-100 mb-8 text-center"
         } `;
       case "h2":
-        return `text-4xl font-bold text-black-100 text-center ${
-          className ? className : "mb-8"
+        return `text-4xl font-bold ${
+          className ? className : "text-black-100 mb-8 text-center"
         } `;
       case "h3":
-        return `text-2xl font-bold text-black-100 text-center ${
-          className ? className : "mb-8"
+        return `text-2xl font-bold ${
+          className ? className : "text-black-100 mb-8 text-center"
         } `;
       case "h4":
-        return `text-lg font-light text-[#737a7c] text-center ${
-          className ? className : "mb-6"
+        return `text-lg ${
+          className ? className : "text-black-100 mb-6 text-center"
         } `;
       case "h5":
-        return `text-base font-normal text-slate-500 text-center ${
-          className ? className : "mb-4"
+        return `text-base font-normal ${
+          className ? className : "text-slate-500 mb-4 text-center"
         } `;
       case "h6":
-        return `text-sm font-light text-slate-500 text-center ${
-          className ? className : "mb-4"
+        return `text-sm font-light ${
+          className ? className : "text-slate-500 mb-4 text-center"
         } `;
       default:
-        return `text-4xl font-bold text-black-100 text-center ${
-          className ? className : "mb-16"
+        return `text-4xl font-bold ${
+          className ? className : "text-black-100 mb-16 text-center"
         } `;
     }
   };

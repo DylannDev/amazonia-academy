@@ -17,7 +17,7 @@ type PricingCardProps = {
 const PricingCard = ({ plan }: PricingCardProps) => {
   return (
     <Card>
-      <div className="w-full border-b pb-6">
+      <div className="w-full border-b border-[#334157] pb-6">
         <div className="flex justify-between items-center font-semibold pb-6">
           <h2 className="text-xl">{plan.title}</h2>
           <h2 className="text-2xl">€{plan.price}</h2>

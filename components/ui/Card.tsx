@@ -1,10 +1,20 @@
+import { cn } from "@/lib/utils";
+
 type CardProps = {
   children: React.ReactNode;
+  className?: string;
+  noBorder?: boolean;
 };
 
-const Card = ({ children }: CardProps) => {
+const Card = ({ children, className, noBorder = false }: CardProps) => {
   return (
-    <div className="w-full bg-transparent flex flex-col justify-center items-center rounded-3xl gap-6 p-8 border">
+    <div
+      className={cn(
+        "w-full bg-transparent flex flex-col justify-center items-center rounded-3xl",
+        className ? className : "gap-6 p-8",
+        noBorder ? "" : "border border-[#334157]"
+      )}
+    >
       {children}
     </div>
   );
