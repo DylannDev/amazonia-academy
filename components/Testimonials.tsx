@@ -48,7 +48,7 @@ export function Testimonials() {
       <Title
         level="h2"
         label="Ils ont transformé leur vie avec nous"
-        className="mb-16"
+        className="mb-16 text-center"
       />
       <div className="relative flex h-[500px] w-full flex-row items-center justify-center overflow-hidden">
         <Marquee pauseOnHover vertical className="[--duration:35s]">

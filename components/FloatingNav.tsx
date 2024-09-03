@@ -66,7 +66,7 @@ export const FloatingNav = ({
               duration: 0.2,
             }}
             className={cn(
-              "bg-blue-600 rounded-2xl border backdrop-blur-xl flex max-w-fit fixed top-6 inset-x-0 mx-auto z-[5000] p-1 items-center justify-center",
+              "bg-[#3ea0dc] rounded-2xl border backdrop-blur-xl flex max-w-fit fixed top-6 inset-x-0 mx-auto z-[5000] p-1 items-center justify-center",
               className
             )}
           >
