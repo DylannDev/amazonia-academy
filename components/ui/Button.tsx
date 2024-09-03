@@ -16,8 +16,8 @@ const Button = ({
   otherClasses,
 }: ButtonProps) => {
   const buttonClasses = `
-    flex justify-center  items-center gap-2 px-5 py-3 text-sm rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200
-    ${size === "large" && "w-full"} 
+    flex justify-center  items-center gap-2 px-6 py-4 rounded-full bg-[#3ea0dc] text-white focus:ring-2 focus:ring-blue-400 transition duration-200
+    ${size === "large" ? "w-full" : "w-fit"} 
     ${otherClasses || ""}
   `;
 
