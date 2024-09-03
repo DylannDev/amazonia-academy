@@ -7,5 +7,5 @@ export interface BlogArticle {
   author: string;
   categories: string[];
   image: string;
-  readTime: string;
+  readTime: number;
 }
